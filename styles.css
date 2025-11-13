@@ -13,8 +13,10 @@
 }
 
 .list-img{ /* Only covers image of list, meant for the header question */
-    width: 30px;
-    height: auto;
+    width: 25px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .todo-app{
@@ -60,15 +62,36 @@ button{
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 ul li{
-    list-style: none;
+    list-style: disc;
+    list-style-position: inside;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
+    padding-left: 20px;
     user-select: none;
     cursor: pointer;
+    position: relative;
 
+}
+
+ul li.checked{
+    text-decoration: line-through;
+
+}
+
+ul li span{
+    right:20px;
+    top:5px;
+    width:40px;
+    height:40px;
+    position:absolute;
+    font-size:22px;
+    color:lightgray;
+    text-align: center;
+}
+
+ul li span:hover{
+    color:gray;
 }
