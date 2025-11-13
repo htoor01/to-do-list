@@ -29,7 +29,7 @@ A simple, interactive **to-do list** built with **HTML, CSS, and JavaScript**, f
 ├─ index.html # Main HTML file  
 ├─ styles.css # Styling for layout and elements  
 ├─ script.js # JavaScript logic for tasks and localStorage  
-└─ images/ # Icons or images (e.g., list.pn
+└─ images/ # Icons or images (e.g., list.png)
 
 
 ## Learning Outcomes
