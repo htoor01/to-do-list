@@ -16,13 +16,16 @@ function addTask() {
         span.className = 'close';
     }
     taskInput.value = '';
+    saveData();
 }
 
 taskList.addEventListener('click', function(e){
     if(e.target.tagName === 'LI'){
         e.target.classList.toggle('checked');
+        saveData();
     }else if(e.target.className === 'close'){
         e.target.parentElement.remove();
+        saveData();
     }   
 }, false);
 
@@ -37,3 +40,12 @@ function clearTask(){
 }
 
 clearButton.addEventListener('click', clearTask);
+
+function saveData(){
+    localStorage.setItem('data', taskList.innerHTML);
+}
+
+function displayData(){
+    taskList.innerHTML = localStorage.getItem('data');
+}
+displayData(); //NOTE: only saves locally, not website
