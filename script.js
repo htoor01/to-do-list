@@ -37,6 +37,7 @@ taskInput.addEventListener('keypress', function(e){
 
 function clearTask(){
     taskList.innerHTML = '';
+    saveData()
 }
 
 clearButton.addEventListener('click', clearTask);
