@@ -24,11 +24,11 @@ A simple, interactive **to-do list** built with **HTML, CSS, and JavaScript**, f
 4. Tasks are saved automatically in your browser’s local storage.  
 
 ## File Structure
-/project-root
-│
-├─ index.html # Main HTML file
-├─ styles.css # Styling for layout and elements
-├─ script.js # JavaScript logic for tasks and localStorage
+/project-root  
+│  
+├─ index.html # Main HTML file  
+├─ styles.css # Styling for layout and elements  
+├─ script.js # JavaScript logic for tasks and localStorage  
 └─ images/ # Icons or images (e.g., list.pn
 
 
